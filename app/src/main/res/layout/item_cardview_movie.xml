@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_item_movie_poster"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_item_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@id/img_item_movie_poster"
+            android:layout_toRightOf="@id/img_item_movie_poster"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Avengers: End Game (2019)" />
+
+        <ImageView
+            android:id="@+id/ic_movie_rating"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/tv_item_movie_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@id/img_item_movie_poster"
+            android:background="@drawable/ic_star_yellow_24dp" />
+
+        <TextView
+            android:id="@+id/tv_item_movie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_movie_name"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/ic_movie_rating"
+            android:layout_toRightOf="@id/img_item_movie_poster"
+            android:fontFamily="@font/quicksand"
+            android:text="7.2"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ic_movie_duration"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/tv_item_movie_name"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@id/tv_item_movie_rating"
+            android:background="@drawable/ic_access_time_yellow_24dp" />
+
+        <TextView
+            android:id="@+id/tv_item_movie_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_movie_name"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@id/ic_movie_duration"
+            android:fontFamily="@font/quicksand"
+            android:text="1h 58m"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ic_movie_language"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/tv_item_movie_name"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@id/tv_item_movie_duration"
+            android:background="@drawable/ic_language_yellow_24dp" />
+
+        <TextView
+            android:id="@+id/tv_item_movie_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_movie_name"
+            android:layout_toEndOf="@id/ic_movie_language"
+            android:fontFamily="@font/quicksand"
+            android:text="EN"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_item_movie_short_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_movie_rating"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_item_movie_poster"
+            android:layout_toRightOf="@id/img_item_movie_poster"
+            android:fontFamily="@font/quicksand"
+            android:textSize="12sp"
+            tools:text="Deskripsi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/img_item_movie_poster"
+            android:layout_toRightOf="@id/img_item_movie_poster"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_set_choose_movie"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_marginTop="16dp"
+                android:text="PILIH FILM"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
